@@ -1,0 +1,32 @@
+[[regexes]]
+  name = "example regex entry"
+  description = "example regex entry description"
+  re = "(?P<msg>.*)"
+  hide = false
+  rule_block_name = ""
+
+[options]
+  show_matches = true
+  show_misses = false
+  show_all_matches = false
+  match_sample_size = 0
+  show_multiple_matches = false
+
+[plugin]
+  id = 743182
+  name = "sentinel-ips"
+  version = "v1.0.0"
+  description = ""
+  log_file = "/var/log/sentinel-ips.log"
+  website = "https://gitlab.sedara.io/av-plugins/sentinel-ips"
+  log_format = "-"
+
+[vendor]
+  name = "Dell"
+  model = "Sentinel IPS"
+  version = "4.x"
+  per_asset = false
+
+[author]
+  name = "Sedara, LLC."
+  email = "devs@sedarasecurity.com"
