@@ -10,6 +10,15 @@
   hide = false
   rule_block_name = "General capture - odd paren. format"
 
+[[regexes]]
+  name = "Sentinel IPS: Generic Entry"
+  re = '''^(?P<date>\SYSLOG_DATE)\s(?P<udone>.*)$'''
+  hide = false
+  rule_block_name = "zzzz Generic entry"
+  [regexes.force_field_values]
+    plugin_sid="9999"
+
+
 [options]
   show_matches = true
   show_misses = false
@@ -20,7 +29,7 @@
 [plugin]
   id = 743182
   name = "sentinel-ips"
-  version = "v1.0.0"
+  version = "v1.0.1"
   description = ""
   log_file = "/var/log/sentinel-ips.log"
   website = "https://gitlab.sedara.io/av-plugins/sentinel-ips"

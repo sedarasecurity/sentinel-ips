@@ -5,4 +5,5 @@ INSERT INTO plugin (id, type, name, description, product_type, vendor) VALUES (7
 INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (743182, 1, 15, 172, 1, 1, 'Econet Sentinel IPS: USERDATA2');
 INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (743182, 2, 15, 172, 2, 2, 'Econet Sentinel IPS: USERDATA2');
 INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (743182, 3, 15, 172, 10, 3, 'Econet Sentinel IPS: USERDATA2');
-INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (743182, 3, 15, 172, 10, 3, 'Econet Sentinel IPS: USERDATA2');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (743182, 4, 15, 172, 10, 3, 'Econet Sentinel IPS: USERDATA2');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (743182, 9999, 15, 172, 1, 1, 'Econet Sentinel IPS: Generic Entry');
