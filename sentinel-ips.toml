@@ -1,9 +1,14 @@
 [[regexes]]
-  name = "example regex entry"
-  description = "example regex entry description"
-  re = "(?P<msg>.*)"
+  name = "Sentinel IPS: USERDATA2"
+  re = '''^(?P<date>\SYSLOG_DATE)\s\d{4}-\d{2}-\d{2}\s\d{2}:\s\d{2}:\d{2}\.\d+\|(?P<srcip>\IPV4)\|(?P<srcport>\PORT)\|(?P<dstip>\IPV4)\|(?P<dstport>\PORT)\|(?P<pluginsid>\d+)\|(?P<udtwo>.*)(\s)?$'''
   hide = false
-  rule_block_name = ""
+  rule_block_name = "General capture - normal format"
+
+[[regexes]]
+  name = "Sentinel IPS: USERDATA2"
+  re = '''^(?P<date>\SYSLOG_DATE)\s\d{4}-\d{2}-\d{2}\s\d{2}:\s\d{2}:\d{2}\.\d+\|(?P<srcip>\IPV4)\|(?P<srcport>\PORT)\|(?P<dstip>\IPV4)\|(?P<dstport>\PORT)\|\((?P<pluginsid>\d+)\,\s+\'(?P<udtwo>.*)(\s\'|\')\)$'''
+  hide = false
+  rule_block_name = "General capture - odd paren. format"
 
 [options]
   show_matches = true
@@ -22,7 +27,7 @@
   log_format = "-"
 
 [vendor]
-  name = "Dell"
+  name = "Econet"
   model = "Sentinel IPS"
   version = "4.x"
   per_asset = false
